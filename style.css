@@ -1,0 +1,17 @@
+body{
+    background-color: #222224;;
+}
+.logo-img{
+
+    width: 250px;
+    height: 90px;
+    border-radius: 1rem;
+
+}
+.nav-links{
+    font-family: "Questrial", sans-serif;
+    text-transform: uppercase;
+    font-size: 2vh ;
+    letter-spacing: 0.2vh;
+    color: white !important;
+}
