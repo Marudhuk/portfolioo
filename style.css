@@ -1,6 +1,13 @@
+@font-face {
+    font-family: 'freight';
+    src: url('./assests/fonts/Freight\ Big\ Light.otf');
+}
+
 .body {
     background-color: #222224;
 }
+
+/* navbar styles */
 
 .logo-img {
     width: 150PX;
@@ -14,7 +21,6 @@
     font-size: 0.8rem;
     letter-spacing: 0.2vh;
     color: white !important;
-    /* padding: 0 */
 }
 
 .navbar-collapse {
@@ -22,9 +28,14 @@
 }
 
 .nav-section {
-    padding: 4rem 27px 0 27px;
+    padding: 3rem 27px 0 27px;
     background-color: transparent;
-    position: sticky;
+    position: fixed;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
     margin: 0 auto;
 }
 
@@ -35,12 +46,21 @@
     margin-left: 1.5vw;
 }
 
-@media screen and (max-width : 998px) {
+@media screen and (max-width : 991px) {
     .nav-li:not(:last-child) a::after {
         content: '';
         margin-right: 0;
         margin-left: 0;
 
+    }
+
+    .nav-links {
+        position: absolute;
+        z-index: 1;
+        top: 4rem;
+        background: black;
+        width: 94%;
+        border-radius: 10px;
     }
 }
 
@@ -53,12 +73,316 @@
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.55);
+    color: rgba(0, 0, 0, .55);
     border-color: rgb(255 255 255 / 10%);
 }
 
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgb(112, 112, 112) !important;
+    box-shadow: none !important;
 }
+
+
+/* home styles */
+
+.home {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20vh 7vw;
+
+}
+
+.flower-img {
+    width: 75%;
+    height: 70%;
+    margin-right: 7rem;
+}
+
+.flower-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+
+    .home {
+        padding: 10vh 7vw;
+        padding-top: 30vh;
+    }
+
+    .flower-img {
+        width: 100%;
+    }
+
+    .flower-img img {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        text-align: left;
+
+    }
+
+    .flower-img {
+        margin-right: 0;
+    }
+
+    .sign {
+        display: none;
+    }
+
+    .name h1 {
+        color: white;
+        font-weight: 700;
+        font-style: normal;
+        font-family: 'freight', serif;
+        line-height: 80%;
+        font-weight: 400;
+        font-size: 3rem !important;
+        text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .name {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        width: 200px;
+        left: 10% !important;
+        padding: 20px;
+    }
+
+    .name p {
+        font-size: 17px !important;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-center {
+        order: 1;
+        width: 100% !important;
+        height: 500px !important;
+        padding: 0 15px;
+
+    }
+
+    .left p {
+        /* font-size: 17px !important; */
+        padding: 10px;
+        width: 100% !important;
+    }
+
+    .left h1 {
+        font-size: 2.5rem !important;
+        padding: 10px;
+    }
+
+    .right {
+        padding-top: 50px;
+        border-radius: 10px;
+    }
+
+    .right img {
+        padding: 20px;
+        width: 250px !important;
+        height: 250px !important;
+        border-radius: 20px;
+    }
+
+    .skills h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .whole-skill {
+        flex-direction: column;
+    }
+
+    .skil {
+        height: 350px !important;
+    margin-bottom: 20px;
+    width: 250px !important;
+    padding: 20px !important;
+
+    }
+
+    .skil h3 {
+        font-size: 23px;
+    }
+}
+
+.sign {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    margin-left: 2rem;
+}
+
+.sign img {
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 66%;
+    height: 500px;
+    justify-content: space-evenly;
+}
+
+.name h1 {
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'freight', serif;
+    line-height: 80%;
+    font-weight: 400;
+    font-size: 15vh;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.name p {
+    color: white;
+    font-style: normal;
+    font-family: 'freight', serif;
+    font-size: 2.5vw;
+    letter-spacing: 0;
+    width: 100% !important;
+    padding: 15px;
+}
+
+.about {
+    background-color: #222224;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+}
+
+.left-center {
+    width: 40%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* order: 1; */
+}
+
+.left {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    text-align: left;
+
+}
+
+.left h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'freight-big-pro', serif;
+    line-height: 80%;
+}
+
+.left p {
+    line-height: 1.5rem;
+    font-family: "Questrial", sans-serif;
+    color: white;
+    font-size: 14px;
+    line-height: 150%;
+    width: 70%;
+    letter-spacing: 0.05vw;
+
+}
+
+.right img {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(184, 176, 176);
+    border-radius: 20px;
+}
+
+.whole-skill {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 0;
+
+}
+
+.skills {
+    text-align: center;
+    padding: 50px 0;
+
+}
+
+.skills h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'freight-big-pro', serif;
+    line-height: 80%;
+    padding: 50px 0;
+}
+
+.skil img {
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+.skil {
+    background: #494748;
+    width: 300px;
+    height: 350px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 15px;
+}
+.skil:hover{
+    box-shadow: 5px 15px 28px 5px rgba(181, 181, 181, 0.25);
+
+}
+.skil h3 {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 400;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'freight-big-pro', serif;
+    line-height: 80%;
+}
+
+.skil p {
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5rem;
+    font-family: "Questrial", sans-serif;
+    color: white;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.05vw;
+}
+
+/* .projects h1{
+
+} */
