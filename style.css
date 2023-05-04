@@ -28,7 +28,7 @@
 }
 
 .nav-section {
-    padding: 3rem 27px 0 27px;
+    padding: 1rem 27px 0 27px;
     background-color: transparent;
     position: fixed;
     margin: 0 auto;
@@ -89,11 +89,11 @@
 .home {
 
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20vh 7vw;
+    /* padding: 20vh 7vw; */
 
 }
 
@@ -160,6 +160,7 @@
     align-items: center;
     justify-content: space-evenly;
     border-radius: 10px;
+    height: 100vh;
 }
 
 .left-center {
@@ -221,7 +222,7 @@
 .skills {
     text-align: center;
     padding: 50px 0;
-    height: 950px;
+    height: 100vh;
 }
 
 .skills h1 {
@@ -387,6 +388,8 @@
 .contact {
     background-color: black;
     height: 400px;
+    margin: 10px 0;
+    border-radius: 12px;
 }
 
 .whole-contact {
@@ -472,10 +475,16 @@
 
 
 @media (min-width: 320px) and (max-width: 800px) {
+    .nav-section{
+        padding: 1rem 27px 0 27px;
+    }
 
     .home {
-        padding: 10vh 7vw;
-        padding-top: 30vh;
+        padding: 9vh 7vw; 
+        /* padding-top: 30vh; */
+        padding: 50px 25px;
+        /* margin-top: 95px; */
+        height: 100vh;
     }
 
     .flower-img {
@@ -531,9 +540,9 @@
     .left-center {
         order: 1;
         width: 100% !important;
-        height: 500px !important;
+        height: auto !important;
         padding: 0 15px;
-
+        margin-bottom: 18px;
     }
 
     .left p {
@@ -547,8 +556,9 @@
     }
 
     .right {
-        padding-top: 50px;
+        /* padding-top: 50px; */
         border-radius: 10px;
+        margin-bottom: 25px;
     }
 
     .right img {
@@ -560,6 +570,7 @@
 
     .skills h1 {
         font-size: 2.5rem !important;
+        padding: 0;
     }
 
     .whole-skill {
@@ -568,12 +579,13 @@
 
     .skills {
         height: auto !important;
+        padding: 0;
     }
 
     .skil {
         height: 350px !important;
         margin-bottom: 20px;
-        width: 250px !important;
+        width: 300px !important;
         padding: 20px !important;
 
     }
@@ -583,11 +595,13 @@
     }
 
     .project-contents {
-        width: 86% !important;
-        margin: 1rem;
+        width: 300px !important;
+        /* margin: 1rem; */
         height: auto !important;
-        padding: 95px 28px 36px !important;
-        margin: 2rem 1rem !important;
+        /* padding: 95px 28px 36px !important; */
+        margin: 2rem 0rem !important;
+    padding: 30px 30px 36px;
+
     }
 
     .social-img {
@@ -597,6 +611,7 @@
 
     .whole-one {
         flex-direction: column;
+        margin-bottom: 0;
     }
 
     .whole-project {
@@ -610,6 +625,8 @@
     .projects h1 {
         font-size: 2.4rem !important;
         margin-bottom: 0 !important;
+        padding: 0 0 10px 0;
+        /* padding-bottom:10px ; */
     }
 
     .text-area h3 {
@@ -622,5 +639,14 @@
 
     .buttn a {
         font-size: 14px !important;
+    }
+    .whole-contact{
+        flex-direction: column;
+    }
+    .right-contact{
+        display: none;
+    }
+    .copy{
+        padding-top: 40px;
     }
 }
