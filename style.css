@@ -21,6 +21,11 @@
     font-size: 0.8rem;
     letter-spacing: 0.2vh;
     color: white !important;
+    
+
+}
+.nav-links a:hover{
+    color: #e22e8b !important;
 }
 
 .navbar-collapse {
@@ -38,6 +43,7 @@
     z-index: 100;
     margin: 0 auto;
 }
+
 
 .nav-li:not(:last-child) a::after {
 
@@ -66,6 +72,7 @@
 
 .show {
     padding: 10px !important;
+    /* text-align: center */
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -358,6 +365,11 @@
     transition: all .3s ease;
     box-shadow: 3px 3px 1px 0 #f2f2f2;
     position: relative;
+    cursor: pointer;
+    text-decoration: none;
+}
+.buttn a:hover{
+    color: black;
 }
 
 .whole-project {
@@ -442,6 +454,9 @@
     align-items: center;
     border-radius: 50%;
 }
+.linkedIn{
+    border-radius: 12px !important;
+}
 .footer-links a:hover{
     color: #fff;
     text-shadow: 0 0 2px #fff;
@@ -458,8 +473,8 @@
     display: flex;
     justify-content: space-evenly;
 }
-.insta:hover{
-    background: radial-gradient(circle at 33% 100%,#fed373 4%,#f15245 30%,#d92e7f 62%,#9b36b7 85%,#515ecf);
+.linkedIn:hover{
+    background: #0e76a8;
 }
 .twitter:hover{
     background:  #1D9BF0;
@@ -471,7 +486,14 @@
     text-align: center;
     color: white;
 }
-
+.whole-skill a{
+    text-decoration: none;
+}
+.copyright{
+    margin-top: 58px;
+    color: #824784;
+    font-size: 18px;
+}
 
 
 @media (min-width: 320px) and (max-width: 800px) {
@@ -646,7 +668,31 @@
     .right-contact{
         display: none;
     }
-    .copy{
-        padding-top: 40px;
-    }
+
+}
+
+.whole-skill .html{
+    background-image: url(./assests/water-49.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 266px;
+}
+.whole-skill .js{
+    background-image: url(./assests/water-49.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 179px;
+    
+}
+.whole-skill .angular{
+    background-image: url(./assests/water-49.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 106px;
+}
+.whole-skill .mysql{
+    background-image: url(./assests/water-49.gif);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100% 176px;
 }
